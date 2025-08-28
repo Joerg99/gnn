@@ -1,0 +1,14 @@
+dataset:
+  name: Cora
+  root: c:/workspace/gnn/data/raw/Cora/raw
+model:
+  type: GCN
+  in_channels: 1433  # Will be overridden by dataset.num_features
+  hidden_channels: 16
+  out_channels: 7    # Will be overridden by dataset.num_classes
+training:
+  epochs: 200
+  lr: 0.01
+  weight_decay: 0.0004
+  dropout: 0.5
+device: cpu  # or cuda
